@@ -1,0 +1,375 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\JTools_ShellApp.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\JTools_ShellApp.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_JTOOLS_SHELLAPP_DIALOG DIALOGEX 0, 0, 644, 557
+STYLE DS_SETFONT | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "JTools QTSequencer G4 V1.0.2"
+FONT 8, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_TIMEFULL,"Button",BS_AUTORADIOBUTTON | BS_FLAT | WS_GROUP,21,14,9,9
+    CONTROL         "",IDC_TIMESIM,"Button",BS_AUTORADIOBUTTON | BS_FLAT,49,14,9,9
+    CONTROL         "",IDC_TIMESTEP,"Button",BS_AUTORADIOBUTTON | BS_FLAT,89,14,9,9
+    PUSHBUTTON      "Next",IDC_STEP,119,12,25,11,WS_GROUP
+    PUSHBUTTON      "Start NxCore",IDC_STARTCORE,21,40,48,12,WS_GROUP
+    PUSHBUTTON      "Stop NxCore",IDC_STOPCORE,70,40,46,12
+    PUSHBUTTON      "Settings",IDC_SETTINGS,117,40,48,12,WS_GROUP
+    EDITTEXT        IDC_SYMBOL,14,69,50,14,ES_CENTER | ES_UPPERCASE | ES_AUTOHSCROLL | WS_GROUP
+    CONTROL         "",IDC_STARTTIME,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,14,85,50,13
+    CONTROL         "",IDC_STOPTIME,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,14,99,49,13
+    CONTROL         "",IDC_PRICEON,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,116,10,10
+    CONTROL         "",IDC_VOLUMEON,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,46,116,10,10
+    CONTROL         "",IDC_LEGENDON,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,75,116,10,10
+    CONTROL         "",IDC_GRIDS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,125,10,10
+    CONTROL         "",IDC_SPLITSIZECHART,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,46,125,10,10
+    CONTROL         "",IDC_CIRCUITSTYLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,75,125,10,10
+    CONTROL         "",IDC_SHOWISO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,134,10,10
+    CONTROL         "",IDC_REVTIME,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,46,134,10,10
+    CONTROL         "",IDC_AUTOTRADE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,221,10,10,10
+    CONTROL         "",IDC_SCALETOPRICE,"Button",BS_AUTORADIOBUTTON | WS_GROUP,361,20,10,10
+    CONTROL         "",IDC_SCALETONBBO,"Button",BS_AUTORADIOBUTTON,361,29,10,10
+    CONTROL         "",IDC_SCALETOALL,"Button",BS_AUTORADIOBUTTON,361,38,10,10
+    CONTROL         "",IDC_SCALETOHARD,"Button",BS_AUTORADIOBUTTON,361,47,10,10
+    EDITTEXT        IDC_HARDMAX,451,18,40,12,ES_RIGHT | ES_AUTOHSCROLL | WS_GROUP
+    EDITTEXT        IDC_HARDMIN,451,31,40,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_HARDSCALE,451,44,40,12,ES_RIGHT | ES_AUTOHSCROLL
+    CONTROL         "",IDC_SCALEVOLAUTO,"Button",BS_AUTORADIOBUTTON | WS_GROUP,361,69,10,10
+    CONTROL         "",IDC_SCALEVOLHARD,"Button",BS_AUTORADIOBUTTON,361,79,10,10
+    EDITTEXT        IDC_VOLHARDMAX,450,67,40,12,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER | WS_GROUP
+    EDITTEXT        IDC_VOLHARDSCALE,450,80,40,12,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_USEBBOBAND,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,361,93,10,10
+    EDITTEXT        IDC_BANDPERCENT,361,104,23,12,ES_RIGHT | ES_AUTOHSCROLL
+    CONTROL         "",IDC_ROUNDLOTADJ,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,361,124,10,10
+    CONTROL         "",IDC_EXCLUDETRADES,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,507,20,10,10
+    CONTROL         "",IDC_EXCLUDEQUOTES,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,507,29,10,10
+    EDITTEXT        IDC_REXCHANGEFILTER,507,49,64,13,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_STARTPOINT,507,77,43,13,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_STARTPOINTSPINNER,"msctls_updown32",UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS,548,76,11,14
+    EDITTEXT        IDC_NUMDATAPOINTS,507,103,43,13,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_DATAPOINTSPINNER,"msctls_updown32",UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS,548,103,11,14
+    EDITTEXT        IDC_OTHERWIDTH,566,77,29,13,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER | WS_GROUP
+    CONTROL         "",IDC_OTHERWIDTHSPIN,"msctls_updown32",UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS,596,77,11,14
+    EDITTEXT        IDC_COMPWIDTH,566,103,29,13,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_COMPWIDTHSPIN,"msctls_updown32",UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS,596,103,11,14
+    CONTROL         "",IDC_CHARTPAUSE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,507,118,10,10
+    PUSHBUTTON      "Refresh",IDC_CHARTREFRESH,507,130,39,12,WS_GROUP
+    LTEXT           "Size",IDC_STATIC,56,116,14,8
+    EDITTEXT        IDC_SYSTEMMODE,21,25,179,12,ES_AUTOHSCROLL | ES_READONLY | WS_GROUP | NOT WS_TABSTOP
+    RTEXT           "NxCore Mode:",IDC_STATIC,154,17,46,8
+    LTEXT           "Full",IDC_STATIC,32,14,12,8
+    LTEXT           "RT-Sim",IDC_STATIC,61,14,24,8
+    LTEXT           "Step",IDC_STATIC,101,14,16,8
+    GROUPBOX        "NxCore Properties",IDC_STATIC,14,3,194,55
+    CTEXT           "Symbol",IDC_STATIC,14,61,50,8
+    EDITTEXT        IDC_INTSTATUS,68,69,135,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
+    CTEXT           "Status",IDC_STATIC,72,61,127,8
+    LTEXT           "Grids",IDC_STATIC,24,125,16,8
+    LTEXT           "NoRTChart",IDC_STATIC,519,118,37,8
+    CONTROL         "",IDC_GRAPH,"Static",SS_BITMAP,7,238,15,13
+    CONTROL         "",IDC_VOLGRAPH,"Static",SS_BITMAP,7,296,15,13
+    EDITTEXT        IDC_SYSSTATUS,204,538,198,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
+    CONTROL         "",IDC_LEGGRAPH,"Static",SS_BITMAP,7,346,15,13
+    LTEXT           "Price",IDC_STATIC,24,116,17,8
+    RTEXT           "Quote Pt Size:",IDC_STATIC,566,93,46,8
+    LTEXT           "px",IDC_STATIC,598,105,9,8
+    RTEXT           "Trade Pt Size:",IDC_STATIC,564,67,46,8
+    LTEXT           "px",IDC_STATIC,598,78,9,8
+    LTEXT           "CircuitBrd",IDC_STATIC,85,125,31,8
+    LTEXT           "Scale Price To:",IDC_STATIC,361,11,50,8
+    LTEXT           "Price Only",IDC_STATIC,371,20,33,8
+    LTEXT           "NBBO",IDC_STATIC,371,29,21,8
+    LTEXT           "All Shown",IDC_STATIC,371,38,32,8
+    LTEXT           "Hard Scale",IDC_STATIC,371,47,36,8
+    CTEXT           "HMax:",IDC_HARDLABEL1,425,20,22,8
+    CTEXT           "HMin:",IDC_HARDLABEL2,427,33,20,8
+    CTEXT           "HScale:",IDC_HARDLABEL3,421,46,26,8
+    LTEXT           "Scale Volume To:",IDC_STATIC,361,59,57,8
+    LTEXT           "Auto",IDC_STATIC,371,69,16,8
+    CTEXT           "HMax:",IDC_HARDLABEL4,424,69,22,8
+    LTEXT           "Hard Scale",IDC_STATIC,371,79,36,8
+    CTEXT           "HScale:",IDC_HARDLABEL5,420,81,26,8
+    LTEXT           "Show BBO Bands",IDC_STATIC,372,93,58,8
+    CTEXT           "Banding %",IDC_BANDINGLABEL,388,106,34,8
+    LTEXT           "QSize x 100 (Round Lot Adj)",IDC_RTLABEL1,372,121,53,19
+    LTEXT           "AT",IDC_STATIC,221,1,10,8
+    LTEXT           "Lgnd",IDC_STATIC,86,116,17,8
+    LTEXT           "Start Capture",IDC_STATIC,67,88,42,8
+    LTEXT           "Stop Capture",IDC_STATIC,67,102,42,8
+    LTEXT           "RevTime",IDC_STATIC,56,134,30,8
+    LTEXT           "Data Points:",IDC_STATIC,507,93,40,8
+    LTEXT           "Start Point:",IDC_STATIC,507,67,36,8
+    LTEXT           "Exclude Trades",IDC_RTLABEL2,519,20,54,8
+    LTEXT           "Exclude Quotes",IDC_RTLABEL3,519,29,54,8
+    LTEXT           "Reporting Exg Filter:",IDC_RTLABEL4,507,40,64,8
+    LTEXT           "ISO",IDC_STATIC,24,134,13,8
+    LTEXT           "Spsz",IDC_STATIC,56,125,16,8
+END
+
+IDD_PREFERENCES DIALOGEX 0, 0, 253, 374
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Settings & Preferences"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "Start NxCore Processing On Application Launch",IDC_ONSTART,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,7,167,10
+    CONTROL         "Close Application On Tape Complete",IDC_ONSTOP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,16,131,10
+    CONTROL         "Save/Restore Application Screen Position",IDC_SAVESCREEN,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,25,147,10
+    EDITTEXT        IDC_DLLNAME,10,51,210,12,ES_AUTOHSCROLL | ES_READONLY | WS_GROUP
+    CONTROL         "Realtime",IDC_REALTIME,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,11,84,43,10
+    CONTROL         "Historical",IDC_HISTORICAL,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,11,94,45,10
+    EDITTEXT        IDC_RTSIM,123,83,40,12,ES_AUTOHSCROLL | ES_NUMBER | WS_GROUP
+    EDITTEXT        IDC_TAPENAME,10,118,210,12,ES_AUTOHSCROLL | WS_GROUP
+    PUSHBUTTON      "..",IDC_CHOOSEFILE,220,118,20,13
+    CONTROL         "Exclude Quotes",IDC_EXCLUDEQUOTES,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,11,136,66,10
+    CONTROL         "Exclude Level 2 Quotes",IDC_EXCLUDEL2,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,11,146,91,10
+    CONTROL         "Exclude OPRA",IDC_EXCLUDEOPRA,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,108,135,61,10
+    CONTROL         "Exclude CRC",IDC_EXCLUDECRC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,108,146,57,10
+    CONTROL         "Delayed",IDC_DELAYED,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,165,42,10
+    EDITTEXT        IDC_DELAYMINUTES,123,164,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_DELAYRESOLUTION,123,178,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Second",IDC_SECOND,"Button",BS_AUTORADIOBUTTON | WS_DISABLED | WS_GROUP,13,209,36,10
+    CONTROL         "Minute",IDC_MINUTE,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,52,209,34,10
+    CONTROL         "Hour",IDC_HOUR,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,88,209,31,10
+    CONTROL         "None",IDC_CLOCKNONE,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,118,209,33,10
+    EDITTEXT        IDC_ACTIVITYLIMIT,97,227,33,12,ES_AUTOHSCROLL | WS_DISABLED | WS_GROUP
+    PUSHBUTTON      "Text",IDC_WINFG1,83,269,23,12,WS_DISABLED | WS_GROUP
+    PUSHBUTTON      "Background",IDC_WINBG1,106,269,44,12,WS_DISABLED | WS_GROUP
+    PUSHBUTTON      "Text",IDC_WINFG2,83,283,23,12,WS_DISABLED
+    PUSHBUTTON      "Background",IDC_WINBG2,106,283,44,12,WS_DISABLED
+    PUSHBUTTON      "Text",IDC_WINFG3,83,297,23,12,WS_DISABLED
+    PUSHBUTTON      "Background",IDC_WINBG3,106,297,44,12,WS_DISABLED
+    PUSHBUTTON      "Text",IDC_WINFG4,83,312,23,12,WS_DISABLED
+    PUSHBUTTON      "Background",IDC_WINBG4,106,312,44,12,WS_DISABLED
+    PUSHBUTTON      "Reset to Defaults",IDC_RESET,89,338,65,13
+    DEFPUSHBUTTON   "OK",IDOK,71,352,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,122,352,50,14,WS_GROUP
+    LTEXT           "Tape File to Use (when in Historical Mode):",IDC_STATIC,10,108,137,8
+    GROUPBOX        "Colors",IDC_STATIC,7,256,239,77
+    EDITTEXT        IDC_WINSHOW1,16,269,65,12,ES_AUTOHSCROLL | ES_READONLY | WS_DISABLED | NOT WS_TABSTOP
+    GROUPBOX        "Running Mode:",IDC_STATIC,7,72,239,178
+    RTEXT           "RT-Sim Pause:",IDC_STATIC,72,85,47,8
+    LTEXT           "ms",IDC_STATIC,167,85,10,8
+    EDITTEXT        IDC_WINSHOW2,16,283,65,12,ES_AUTOHSCROLL | ES_READONLY | WS_DISABLED | NOT WS_TABSTOP
+    EDITTEXT        IDC_WINSHOW3,16,297,65,12,ES_AUTOHSCROLL | ES_READONLY | WS_DISABLED | NOT WS_TABSTOP
+    RTEXT           "Delay Minutes:",IDC_STATIC,71,165,48,8
+    RTEXT           "Delay Resolution:",IDC_STATIC,62,179,57,8
+    LTEXT           "ms",IDC_STATIC,167,179,10,8
+    LTEXT           "NxCore DLL:",IDC_STATIC,10,41,41,8
+    LTEXT           "Update NxTime in GUI Every:",IDC_STATIC,13,199,94,8,WS_DISABLED
+    EDITTEXT        IDC_WINSHOW4,16,312,65,12,ES_AUTOHSCROLL | ES_READONLY | WS_DISABLED | NOT WS_TABSTOP
+    LTEXT           "Activity Clear Threshold:",IDC_STATIC,13,229,80,8,WS_DISABLED
+    LTEXT           "Items",IDC_STATIC,134,229,19,8,WS_DISABLED
+END
+
+IDD_COLORPREFS DIALOGEX 0, 0, 202, 398
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Color Preferences"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Bk",IDC_MAINCOLORPICK1,57,15,30,12
+    PUSHBUTTON      "Fg",IDC_MAINFGCOLORPICK1,87,15,30,12
+    PUSHBUTTON      "Bk",IDC_MAINCOLORPICK2,57,29,30,12
+    PUSHBUTTON      "Fg",IDC_MAINFGCOLORPICK2,87,29,30,12
+    PUSHBUTTON      "Bk",IDC_MAINCOLORPICK3,57,54,30,12
+    PUSHBUTTON      "Grid",IDC_MAINFGCOLORPICK3,87,54,30,12
+    PUSHBUTTON      "Clr",IDC_MAINCOLORPICK7,57,68,30,12
+    PUSHBUTTON      "Clr",IDC_MAINCOLORPICK8,165,87,30,12
+    PUSHBUTTON      "Clr",IDC_MAINCOLORPICK9,165,101,30,12
+    PUSHBUTTON      "Clr",IDC_MAINCOLORPICK10,165,116,30,12
+    PUSHBUTTON      "Clr",IDC_MAINCOLORPICK11,57,251,30,12
+    PUSHBUTTON      "Clr",IDC_MAINCOLORPICK12,57,265,30,12
+    PUSHBUTTON      "Select",IDC_LISTFONT,87,288,44,12
+    PUSHBUTTON      "White Scheme",IDC_WHITESCHEME,21,314,53,13
+    PUSHBUTTON      "Black Scheme",IDC_BLACKSCHEME,75,314,53,13
+    PUSHBUTTON      "Reset All To Default",IDC_DEFAULT,37,328,74,13
+    EDITTEXT        IDC_MAXBARS,41,350,44,13,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,23,377,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,75,377,50,14
+    EDITTEXT        IDC_WINSHOW5,7,288,79,18,ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
+    LTEXT           "Primary Window:",IDC_STATIC,7,6,55,8
+    EDITTEXT        IDC_MAINCOLORCONTROL3,7,54,49,13,ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
+    EDITTEXT        IDC_MAINCOLORCONTROL1,7,14,49,13,ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
+    EDITTEXT        IDC_MAINCOLORCONTROL2,7,28,49,13,ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
+    LTEXT           "Chart:",IDC_STATIC,7,46,22,8
+    EDITTEXT        IDC_MAINCOLORCONTROL7,7,68,49,13,ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
+    EDITTEXT        IDC_MAINCOLORCONTROL8,115,87,49,13,ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
+    EDITTEXT        IDC_MAINCOLORCONTROL9,115,101,49,13,ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
+    EDITTEXT        IDC_MAINCOLORCONTROL10,115,116,49,13,ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
+    CONTROL         "",IDC_EXCHANGELIST,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,87,106,159
+    EDITTEXT        IDC_MAINCOLORCONTROL11,7,251,49,13,ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
+    EDITTEXT        IDC_MAINCOLORCONTROL12,7,265,49,13,ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
+    LTEXT           "MaxBars:",IDC_STATIC,8,352,31,8
+    LTEXT           "( NxCore will be stopped if changed. Default=86400 )",IDC_STATIC,89,349,90,17
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,2,0
+ PRODUCTVERSION 1,0,2,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "Comments", "Written by Jeffrey Donovan"
+            VALUE "CompanyName", "Nanex, LLC"
+            VALUE "FileDescription", "JTools One Sec Charterl Application"
+            VALUE "FileVersion", "1.0.2"
+            VALUE "InternalName", "JTools_OneSecCharter.exe"
+            VALUE "LegalCopyright", "(c) Nanex, LLC.  All rights reserved."
+            VALUE "OriginalFilename", "JTools_OneSecCharter.exe"
+            VALUE "ProductName", "JTools One Sec Charter Application"
+            VALUE "ProductVersion", "1.0.2"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_JTOOLS_SHELLAPP_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 637
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 550
+    END
+
+    IDD_PREFERENCES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 246
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 367
+    END
+
+    IDD_COLORPREFS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 195
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 391
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\JTools_ShellApp.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
